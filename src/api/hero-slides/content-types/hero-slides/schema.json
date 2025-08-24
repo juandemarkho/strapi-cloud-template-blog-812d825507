@@ -1,0 +1,17 @@
+{
+  "collectionName": "hero_slides",
+  "info": {
+    "singularName": "hero-slide",
+    "pluralName": "hero-slides",
+    "displayName": "Hero Slides",
+    "description": "Homepage hero cards"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string", "required": true, "minLength": 1, "maxLength": 120 },
+    "venue_tag": { "type": "enumeration", "enum": ["Pickleball", "Drip House", "FruitGenesis", "Skate", "Studio"], "required": true },
+    "poster_portrait": { "type": "media", "required": true, "multiple": false, "allowedTypes": ["images"] },
+    "link_url": { "type": "string", "required": true },
+    "active_from": { "type": "datetime", "required": true }
+  }
+}
